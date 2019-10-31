@@ -1,48 +1,8 @@
 from constants import *
 import random
 import pandas as pd
-
-invalid_set = [
-  {
-    COLOR: RED,
-    SHAPE: CIRCLE,
-    FILL: BLANK,
-    NUMBER: 2
-  },
-  {
-    COLOR: PURPLE,
-    SHAPE: SQUIGGLE,
-    FILL: SOLID,
-    NUMBER: 1
-  },
-  {
-    COLOR: RED,
-    SHAPE: DIAMOND,
-    FILL: SOLID,
-    NUMBER: 3
-  }
-]
-
-valid_set = [
-  {
-    COLOR: RED,
-    SHAPE: CIRCLE,
-    FILL: BLANK,
-    NUMBER: 2
-  },
-  {
-    COLOR: RED,
-    SHAPE: SQUIGGLE,
-    FILL: SOLID,
-    NUMBER: 1
-  },
-  {
-    COLOR: RED,
-    SHAPE: DIAMOND,
-    FILL: STRIPED,
-    NUMBER: 3
-  }
-]
+import timeit
+start = timeit.default_timer()
 
 colors = [RED, GREEN, PURPLE]
 shapes = [SQUIGGLE, CIRCLE, DIAMOND]
@@ -198,11 +158,11 @@ while True:
   row = get_random_row()
 
   # check if loop is done with one or both
-  if num_trues > 1000 and num_falses > 1000:
+  if num_trues > 999 and num_falses > 999:
     break
-  elif row["set"] == [False] and num_falses > 1000:
+  elif row["set"] == [False] and num_falses > 999:
     continue
-  elif row["set"] == [True] and num_trues > 1000:
+  elif row["set"] == [True] and num_trues > 999:
     continue
 
   # increment counters
@@ -218,4 +178,7 @@ while True:
   csv_df = csv_df.append(row_df, ignore_index=True)
 
 # export the csv
-csv_df.to_csv("generated_data.csv")
+csv_df.to_csv("generated_data.csv", index=False)
+
+stop = timeit.default_timer()
+print("completed in", (stop - start), "s")
