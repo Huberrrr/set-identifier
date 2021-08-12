@@ -1,16 +1,16 @@
 COLOR = "color"
 RED = "red"
-GREEN = "green"
 PURPLE = "purple"
+GREEN = "green"
 
 SHAPE = "shape"
+OVAL = "oval"
 SQUIGGLE = "squiqqle"
-CIRCLE = "circle"
 DIAMOND = "diamond"
 
 FILL = "fill"
 SOLID = "solid"
 STRIPED = "striped"
-BLANK = "blank"
+OUTLINED = "outlined"
 
 NUMBER = "number"

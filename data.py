@@ -2,8 +2,8 @@ from constants import *
 
 data1 = [{
   COLOR: RED,
-  SHAPE: CIRCLE,
-  FILL: BLANK,
+  SHAPE: OVAL,
+  FILL: OUTLINED,
   NUMBER: 2
 },
 {
@@ -32,38 +32,38 @@ data1 = [{
 },
 {
   COLOR: PURPLE,
-  SHAPE: CIRCLE,
+  SHAPE: OVAL,
   FILL: STRIPED,
   NUMBER: 1
 },
 {
   COLOR: RED,
-  SHAPE: CIRCLE,
-  FILL: BLANK,
+  SHAPE: OVAL,
+  FILL: OUTLINED,
   NUMBER: 1
 },
 {
   COLOR: PURPLE,
-  SHAPE: CIRCLE,
-  FILL: BLANK,
+  SHAPE: OVAL,
+  FILL: OUTLINED,
   NUMBER: 1
 },
 {
   COLOR: GREEN,
-  SHAPE: CIRCLE,
+  SHAPE: OVAL,
   FILL: SOLID,
   NUMBER: 2
 },
 {
   COLOR: PURPLE,
-  SHAPE: CIRCLE,
+  SHAPE: OVAL,
   FILL: SOLID,
   NUMBER: 1
 },
 {
   COLOR: RED,
-  SHAPE: CIRCLE,
-  FILL: BLANK,
+  SHAPE: OVAL,
+  FILL: OUTLINED,
   NUMBER: 3
 },
 {
@@ -88,19 +88,19 @@ data2 = [{
 {
   COLOR: RED,
   SHAPE: DIAMOND,
-  FILL: BLANK,
+  FILL: OUTLINED,
   NUMBER: 3
 },
 {
   COLOR: RED,
-  SHAPE: CIRCLE,
+  SHAPE: OVAL,
   FILL: STRIPED,
   NUMBER: 2
 },
 {
   COLOR: GREEN,
-  SHAPE: CIRCLE,
-  FILL: BLANK,
+  SHAPE: OVAL,
+  FILL: OUTLINED,
   NUMBER: 3
 },
 {
@@ -124,7 +124,7 @@ data2 = [{
 {
   COLOR: GREEN,
   SHAPE: SQUIGGLE,
-  FILL: BLANK,
+  FILL: OUTLINED,
   NUMBER: 1
 },
 {
@@ -136,7 +136,7 @@ data2 = [{
 {
   COLOR: PURPLE,
   SHAPE: SQUIGGLE,
-  FILL: BLANK,
+  FILL: OUTLINED,
   NUMBER: 2
 },
 {

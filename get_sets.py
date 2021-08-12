@@ -8,11 +8,11 @@ red = []
 green = []
 purple = []
 squiggle = []
-circle = []
+oval = []
 diamond = []
 solid = []
 striped = []
-blank = []
+outlined = []
 num1 = []
 num2 = []
 num3 = []
@@ -33,8 +33,8 @@ for i in range(0, 12):
   # check for shape
   if data[i][SHAPE] == SQUIGGLE:
     squiggle.append(i)
-  elif data[i][SHAPE] == CIRCLE:
-    circle.append(i)
+  elif data[i][SHAPE] == OVAL:
+    oval.append(i)
   elif data[i][SHAPE] == DIAMOND:
     diamond.append(i)
 
@@ -43,8 +43,8 @@ for i in range(0, 12):
     solid.append(i)
   elif data[i][FILL] == STRIPED:
     striped.append(i)
-  elif data[i][FILL] == BLANK:
-    blank.append(i)
+  elif data[i][FILL] == OUTLINED:
+    outlined.append(i)
 
   # check for number
   if data[i][NUMBER] == 1:
@@ -76,8 +76,8 @@ for i in range(0, 12):
       if (i in squiggle and j in squiggle and k not in squiggle) or (i in squiggle and j not in squiggle and k in squiggle) or (i not in squiggle and j in squiggle and k in squiggle):
         continue
 
-      # check if circle has any combo of 2
-      if (i in circle and j in circle and k not in circle) or (i in circle and j not in circle and k in circle) or (i not in circle and j in circle and k in circle):
+      # check if oval has any combo of 2
+      if (i in oval and j in oval and k not in oval) or (i in oval and j not in oval and k in oval) or (i not in oval and j in oval and k in oval):
         continue
 
       # check if diamond has any combo of 2
@@ -92,8 +92,8 @@ for i in range(0, 12):
       if (i in striped and j in striped and k not in striped) or (i in striped and j not in striped and k in striped) or (i not in striped and j in striped and k in striped):
         continue
 
-      # check if blank has any combo of 2
-      if (i in blank and j in blank and k not in blank) or (i in blank and j not in blank and k in blank) or (i not in blank and j in blank and k in blank):
+      # check if outlined has any combo of 2
+      if (i in outlined and j in outlined and k not in outlined) or (i in outlined and j not in outlined and k in outlined) or (i not in outlined and j in outlined and k in outlined):
         continue
 
       # check if num1 has any combo of 2
@@ -109,6 +109,10 @@ for i in range(0, 12):
         continue
 
       set_count += 1
+      print(data[i])
+      print(data[j])
+      print(data[k])
+      print("\n")
 
 stop = timeit.default_timer()
 print("found", set_count, "sets in", ((stop - start)*1000), "ms")

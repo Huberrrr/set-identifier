@@ -23,7 +23,7 @@ def is_contour_bad_small(c):
     return (area < 20000)
 
 
-image = cv2.imread('./Images/IMG_3485.JPG')
+image = cv2.imread('./set.jpg')
 
 image = imutils.resize(image, width=1000)
 cv2.imshow("go", image)
